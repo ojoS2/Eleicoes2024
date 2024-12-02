@@ -1,0 +1,494 @@
+,id,nome,area,zona,cor_por_zona
+0,455,Vila Santo Antônio Barroquinha,0.033,31,50
+1,169,São Salvador,0.592,29,30
+2,432,Vila Nova Cachoeirinha II,0.007,30,40
+3,47,Coqueiros,0.677,29,30
+4,8,Graça,0.425,26,0
+5,422,Vila Jardim Montanhês,0.034,31,50
+6,295,Canadá,0.092,32,60
+7,7,Aparecida,0.915,30,40
+8,121,Padre Eustáquio,2.973,29,30
+9,196,Aparecida Sétima Seção,0.489,30,40
+10,157,São Cristóvão,0.316,32,60
+11,33,Casa Branca,0.668,28,20
+12,384,Vila Tiradentes,0.045,32,60
+13,475,Novo Glória,0.708,29,30
+14,21,Caetano Furquim,0.024,28,20
+15,128,Pindorama,1.611,29,30
+16,443,Vila Paraíso,0.018,35,90
+17,141,Santa Efigênia,2.148,35,90
+18,51,Dom Bosco,1.118,29,30
+19,150,Santa Tereza,1.556,26,0
+20,37,Centro,2.02,33,70
+21,94,Lagoinha,0.555,30,40
+22,22,Caiçara-Adelaide,0.779,30,40
+23,381,Senhor dos Passos,0.125,30,40
+24,41,Colégio Batista,0.777,26,0
+25,217,Savassi,1.186,33,70
+26,172,Serra,1.53,35,90
+27,279,Barão Homem de Melo I,0.005,332,150
+28,4,Alto dos Pinheiros,0.41,37,110
+29,468,Vila Trinta e Um de Março,0.056,29,30
+30,643,Novo Lajedo,0.397,39,130
+31,52,Dom Cabral,0.538,29,30
+32,49,Coração Eucarístico,1.039,29,30
+33,448,Vila PUC,0.004,29,30
+34,478,Cidade Jardim Taquaril,2.083,35,90
+35,469,Vila União,0.014,35,90
+36,43,Conjunto Califórnia II,0.109,29,30
+37,411,Vila do Pombal,0.004,32,60
+38,458,Vila São Geraldo,0.004,28,20
+39,208,Confisco,0.276,31,50
+40,290,Boa União I,0.007,331,140
+41,211,Suzana,0.451,32,60
+42,160,São Geraldo,1.325,28,20
+43,111,Nova Esperança,0.443,30,40
+44,401,Vila Boa Vista,0.028,28,20
+45,413,Vila Engenho Nogueira,0.016,31,50
+46,644,Tiradentes,0.677,331,140
+47,645,Montes Claros,0.69,331,140
+48,646,Jardim Liberdade,0.533,333,160
+49,258,Alto Vera Cruz,0.874,28,20
+50,257,Granja de Freitas,0.862,28,20
+51,186,Vera Cruz,0.448,28,20
+52,647,Vila Horto Florestal,0.005,26,0
+53,648,Vila Trevo,0.014,31,50
+54,379,São Vicente,0.015,26,0
+55,126,Paraíso,1.34,35,90
+56,56,Engenho Nogueira,1.991,31,50
+57,305,Conjunto Floramar,0.024,39,130
+58,360,Novo Tupi,0.312,39,130
+59,365,São Francisco das Chagas,0.028,30,40
+60,392,Vila Aeroporto,0.076,32,60
+61,159,São Gabriel,1.997,331,140
+62,108,Minaslândia,0.792,331,140
+63,639,Vila Nova Cintra,0.006,37,110
+64,640,Jardim Getsemani,0.36,27,10
+65,1,Aarão Reis,0.353,331,140
+66,215,Ipê,0.488,27,10
+67,129,Pirajá,0.252,27,10
+68,125,Paquetá,1.456,31,50
+69,307,Conjunto Lagoa,0.073,31,50
+70,42,Concórdia,0.915,32,60
+71,28,Campus UFMG,3.85,31,50
+72,35,São José,0.308,31,50
+73,472,Vitória,0.408,27,10
+74,325,Guanabara,0.002,27,10
+75,73,Guarani,0.73,331,140
+76,404,Vila Copacabana,0.024,334,170
+77,256,Beija Flor,0.927,331,140
+78,204,Jardim Vitória,5.419,27,10
+79,77,Heliópolis,0.658,39,130
+80,131,Pompéia,0.591,28,20
+81,5,Álvaro Camargos,0.206,29,30
+82,267,Acaiaca,0.382,331,140
+83,247,Novo Aarão Reis,0.552,331,140
+84,346,Mariquinhas,0.146,39,130
+85,156,São Bernardo,0.944,32,60
+86,203,Aeroporto,2.33,32,60
+87,253,Ouro Minas,0.525,331,140
+88,85,Jaraguá,0.505,32,60
+89,54,Dom Silvério,0.503,331,140
+90,310,Conjunto Providência,0.014,331,140
+91,385,Três Marias,0.036,331,140
+92,88,Jardim Montanhês,0.597,30,40
+93,78,Horto,0.384,26,0
+94,17,Bonfim,0.879,30,40
+95,306,Conjunto Jardim Filadélfia,0.105,29,30
+96,31,Carlos Prates,1.769,30,40
+97,25,Califórnia,3.414,29,30
+98,429,Vila Nossa Senhora do Rosário,0.024,28,20
+99,331,João Alfredo,0.018,26,0
+100,188,Vila Clóris,0.875,39,130
+101,483,Jardim Leblon,0.74,334,170
+102,412,Vila dos Anjos,0.031,334,170
+103,136,Ribeiro de Abreu,2.137,331,140
+104,259,Tupi B,1.307,39,130
+105,182,Garças,1.25,31,50
+106,83,Itapoã,1.629,39,130
+107,115,Nova Pampulha,0.039,31,50
+108,348,Mirante,0.013,39,130
+109,139,Santa Amélia,2.215,334,170
+110,201,Copacabana,1.442,334,170
+111,27,Campo Alegre,0.217,39,130
+112,311,Conjunto São Francisco de Assis,0.014,31,50
+113,170,São Tomáz,0.185,32,60
+114,255,Nazaré,0.784,331,140
+115,55,Dona Clara,0.791,32,60
+116,641,Vila Verde,0.008,38,120
+117,642,Cristo Rei,0.01,332,150
+118,393,Vila Aeroporto Jaraguá,0.01,32,60
+119,187,Goiânia,1.952,27,10
+120,318,Vila Esplanada,0.035,331,140
+121,287,Biquinhas,0.062,39,130
+122,254,Belmonte,0.483,331,140
+123,349,Mirtes,0.013,27,10
+124,398,Vila Átila de Paiva,0.046,36,100
+125,451,Vila Rica,0.029,32,60
+126,426,Vila Mantiqueira,0.027,38,120
+127,185,Venda Nova,0.768,38,120
+128,367,Vila Piratininga Venda Nova,0.009,334,170
+129,74,Juliana,0.896,39,130
+130,65,Xodó-Marize,0.493,39,130
+131,193,Rio Branco,1.339,334,170
+132,336,Madri,0.147,39,130
+133,363,Parque São Pedro,0.403,38,120
+134,38,Céu Azul,2.748,334,170
+135,148,Santa Mônica,2.192,334,170
+136,161,São João Batista,1.852,38,120
+137,81,Monte Azul,0.588,39,130
+138,209,Paulo VI,1.285,331,140
+139,45,Braúnas,2.003,31,50
+140,36,São Luíz,2.766,31,50
+141,427,Vila Maria,0.123,27,10
+142,462,Vila Satélite,0.013,38,120
+143,342,Maria Teresa,0.893,331,140
+144,210,Capitão Eduardo,3.412,331,140
+145,332,Lajedo,0.515,39,130
+146,312,Conjunto Serra Verde,0.015,38,120
+147,213,Nova América,0.007,38,120
+148,181,Tupi A,0.912,39,130
+149,195,Xangri-lá,0.526,31,50
+150,309,Conjunto Paulo VI,0.214,331,140
+151,283,Beira-Linha,0.229,331,140
+152,46,Jardim Atlântico,1.132,334,170
+153,322,Flamengo,0.013,334,170
+154,166,Piratininga,1.701,334,170
+155,93,Lagoinha Leblon,0.522,334,170
+156,430,Vila Nova,0.017,39,130
+157,299,Cenáculo,0.327,38,120
+158,251,Granja Werneck,9.21,39,130
+159,107,Minascaixa,0.975,38,120
+160,296,Candelária,1.019,38,120
+161,60,Etelvina Carneiro,0.309,39,130
+162,10,Frei Leopoldo,0.248,39,130
+163,92,Lagoa,0.629,334,170
+164,380,Satélite,0.14,39,130
+165,288,Bispo de Maura,0.017,31,50
+166,67,Floramar,1.055,39,130
+167,465,Vila Suzana I,0.065,32,60
+168,263,Vila Formosa,0.044,333,160
+169,252,Vista do Sol,0.317,331,140
+170,375,São Gonçalo,0.243,331,140
+171,134,Providência,0.712,331,140
+172,324,Grotinha,0.013,331,140
+173,410,Vila de Sá,0.015,27,10
+174,199,Nova Cachoeirinha,0.55,30,40
+175,424,Vila Maloca,0.021,30,40
+176,456,Vila São Francisco,0.003,31,50
+177,40,Cidade Nova,0.913,27,10
+178,373,São Benedito,0.04,27,10
+179,434,Vila Nova Cachoeirinha IV,0.015,32,60
+180,57,Ermelinda,0.384,30,40
+181,61,Europa,0.944,38,120
+182,175,Vila SESC,0.02,38,120
+183,95,Letícia,0.775,334,170
+184,274,Apolônia,0.204,334,170
+185,485,Conjunto Capitão Eduardo,0.17,331,140
+186,202,Santa Branca,0.867,334,170
+187,104,Maria Helena,0.734,38,120
+188,473,Zilah Spósito,0.086,39,130
+189,84,Jaqueline,2.954,39,130
+190,308,Conjunto Minascaixa,0.21,38,120
+191,374,São Damião,0.217,39,130
+192,29,Canaã,0.48,39,130
+193,174,Serra Verde,4.039,38,120
+194,102,Mantiqueira,2.927,38,120
+195,87,Jardim dos Comerciários,2.017,38,120
+196,132,Prado,1.584,33,70
+197,515,Vila da Amizade,0.021,332,150
+198,506,São Jorge III,0.222,332,150
+199,89,Jardinópolis,0.454,37,110
+200,138,Salgado Filho,1.454,332,150
+201,191,Maria Virgínia,0.575,32,60
+202,151,Santa Terezinha,1.476,31,50
+203,18,Buritis,3.814,332,150
+204,240,Ernesto do Nascimento,0.181,333,160
+205,225,Átila de Paiva,0.13,36,100
+206,235,Itaipu,0.68,36,100
+207,621,Ventosa,0.219,332,150
+208,264,Corumbiara,0.054,333,160
+209,510,Ambrosina,0.055,332,150
+210,277,Barão Homem de Melo IV,0.05,332,150
+211,387,Universo,0.051,334,170
+212,619,Antônio Ribeiro de Abreu,0.03,331,140
+213,286,Bernadete,0.082,333,160
+214,330,Jardim do Vale,0.045,333,160
+215,291,Vila Dias,0.029,26,0
+216,12,Barro Preto,1.159,33,70
+217,26,Camargos,1.853,37,110
+218,50,Cruzeiro,0.53,35,90
+219,246,Pilar,1.091,333,160
+220,230,Brasil Industrial,0.625,333,160
+221,30,Cardoso,0.945,333,160
+222,231,Vila Pinho,0.358,333,160
+223,484,Serra do Curral,17.377,333,160
+224,368,Pirineus,0.515,28,20
+225,493,Andiroba,0.028,27,10
+226,327,Horto Florestal,2.04,26,0
+227,497,Boa Esperança,0.019,331,140
+228,511,São Jorge II,0.155,34,80
+229,512,Alta Tensão,0.014,36,100
+230,513,Alto das Antenas,0.156,333,160
+231,498,Vila da Luz,0.073,27,10
+232,501,Vila São Gabriel,0.021,331,140
+233,620,Vila Santa Mônica,0.058,334,170
+234,502,Vila Canto do Sabiá,0.014,38,120
+235,617,Lagoa da Pampulha,3.138,--,-10
+236,618,Marieta II,0.008,36,100
+237,194,Vista Alegre,0.459,37,110
+238,499,Vila Ouro Minas,0.037,331,140
+239,649,São Judas Tadeu,0.034,333,160
+240,650,Eliana Silva,0.035,333,160
+241,359,Novo Santa Cecília,0.234,333,160
+242,205,Vale do Jatobá,0.642,333,160
+243,245,Solar do Barreiro,0.749,333,160
+244,241,Santa Rita,0.122,333,160
+245,481,Barreiro,1.58,36,100
+246,105,Milionários,1.317,333,160
+247,439,Vila Nova Paraíso,0.03,332,150
+248,198,Pongelupe,0.239,333,160
+249,260,Vila Ecológica,0.237,333,160
+250,268,Águas Claras,0.146,333,160
+251,242,Mangueiras,0.375,333,160
+252,262,Silveira,0.344,26,0
+253,109,Monsenhor Messias,0.349,30,40
+254,153,Santo André,0.608,30,40
+255,79,Inconfidência,0.345,31,50
+256,68,Floresta,1.094,26,0
+257,106,Minas Brasil,0.326,29,30
+258,75,Gutierrez,1.246,34,80
+259,396,Vila Antena,0.064,332,150
+260,319,Estrela,0.074,34,80
+261,350,Vila Madre Gertrudes III,0.018,37,110
+262,265,Jonas Veiga,0.524,28,20
+263,321,Fazendinha,0.208,35,90
+264,11,Barroca,0.24,34,80
+265,91,João Pinheiro,0.853,37,110
+266,189,Vila Oeste,0.048,37,110
+267,113,Nova Gameleira,1.169,37,110
+268,114,Nova Granada,0.624,332,150
+269,69,Funcionários,0.667,33,70
+270,168,São Pedro,0.582,34,80
+271,190,Vila Paris,0.299,34,80
+272,369,Santa Isabel,0.006,35,90
+273,371,Santa Sofia,0.128,332,150
+274,486,Mala e Cuia,0.002,34,80
+275,314,Custodinha,0.009,37,110
+276,234,Boa Viagem,0.235,33,70
+277,197,Alto Barroca,0.315,34,80
+278,326,Guaratã,0.1,332,150
+279,98,Lourdes,1.259,33,70
+280,361,Oeste,0.791,37,110
+281,356,Nossa Senhora do Rosário,0.176,35,90
+282,355,Nossa Senhora de Fátima,0.62,35,90
+283,315,Delta,0.045,29,30
+284,24,Calafate,1.044,332,150
+285,402,Vila Calafate,0.021,332,150
+286,9,Baleia,3.621,35,90
+287,403,Vila Califórnia,0.109,29,30
+288,482,Conjunto Califórnia I,0.298,29,30
+289,303,Cônego Pinheiro,0.015,35,90
+290,304,Cônego Pinheiro A,0.008,35,90
+291,347,Marmiteiros,0.028,29,30
+292,116,Nova Suissa,1.252,332,150
+293,118,Novo São Lucas,0.277,35,90
+294,353,Nossa Senhora da Aparecida,0.134,35,90
+295,152,Santo Agostinho,0.83,33,70
+296,440,Vila Novo São Lucas,0.14,35,90
+297,123,Palmeiras,1.446,332,150
+298,218,Bairro Novo das Indústrias,0.753,333,160
+299,6,Anchieta,0.696,35,90
+300,372,Santana do Cafezal,0.175,35,90
+301,354,Nossa Senhora da Conceição,0.203,35,90
+302,72,Grajaú,0.426,34,80
+303,39,Cidade Jardim,0.51,34,80
+304,438,Vila Nova Gameleira III,0.015,37,110
+305,339,Maravilha,0.004,37,110
+306,146,Santa Maria,0.73,37,110
+307,171,Saudade,0.596,28,20
+308,406,Vila Coqueiral,0.062,29,30
+309,487,Belém,0.002,28,20
+310,216,Jardim Guanabara,1.151,39,130
+311,163,Jardim São José,0.791,31,50
+312,127,Pedreira Prado Lopes,0.151,30,40
+313,323,Grota,0.007,28,20
+314,58,Esplanada,0.825,28,20
+315,461,Vila São Rafael,0.029,28,20
+316,313,Conjunto Taquaril,1.096,28,20
+317,178,Taquaril,0.421,28,20
+318,335,Lorena,0.003,29,30
+319,357,Conjunto Novo Dom Bosco,0.023,29,30
+320,135,Renascença,0.86,32,60
+321,431,Vila Nova Cachoeirinha I,0.059,30,40
+322,464,Vila Sumaré,0.069,30,40
+323,428,Vila Minaslândia,0.039,331,140
+324,96,Liberdade,0.457,32,60
+325,62,Eymard,0.594,27,10
+326,477,Vila São Dimas,0.01,331,140
+327,449,Vila Real I,0.002,31,50
+328,147,Maria Goretti,0.778,27,10
+329,149,Santa Rosa,0.688,32,60
+330,34,Castelo,2.409,31,50
+331,143,Santa Inês,1.129,26,0
+332,177,Solimões,0.287,39,130
+333,130,Planalto,2.515,39,130
+334,447,Vila Primeiro de Maio,0.164,331,140
+335,200,Trevo,1.644,31,50
+336,352,Vila Nossa Senhora Aparecida,0.069,334,170
+337,275,Bacurau,0.004,39,130
+338,408,Vila da Paz,0.018,32,60
+339,420,Vila Ipiranga,0.005,26,0
+340,44,Conjunto Celso Machado,0.331,31,50
+341,266,Indaiá,0.435,32,60
+342,158,São Francisco,1.43,31,50
+343,122,Palmares,0.697,32,60
+344,470,São Sebastião,0.019,32,60
+345,453,Vila Santa Rosa,0.029,32,60
+346,183,União,1.541,27,10
+347,364,Penha,0.214,27,10
+348,419,Vila Inestan,0.021,32,60
+349,173,Serrano,1.081,31,50
+350,638,Vila São Tomáz,0.213,32,60
+351,184,Universitário,0.499,32,60
+352,454,Vila Santo Antônio,0.006,32,60
+353,442,Vila Paquetá,0.011,31,50
+354,466,Vila Suzana II,0.003,32,60
+355,329,Itatiaia,0.193,31,50
+356,284,Bela Vitória,0.069,27,10
+357,289,Boa União II,0.018,331,140
+358,133,Primeiro de Maio,0.176,331,140
+359,351,Morro dos Macacos,0.015,27,10
+360,15,Boa Vista,1.252,28,20
+361,20,Cachoeirinha,1.3,32,60
+362,64,Sumaré,0.155,30,40
+363,358,Novo Ouro Preto,0.032,31,50
+364,162,Vila São João Batista,0.087,38,120
+365,389,Várzea da Palma,0.005,334,170
+366,421,Vila Jardim Leblon,0.014,334,170
+367,207,Jardim Felicidade,0.81,39,130
+368,459,Vila São Paulo,0.074,27,10
+369,395,Vila Jardim Alvorada,0.231,31,50
+370,636,Vila Viveiro,0.069,39,130
+371,637,Vila Alto dos Pinheiros,0.011,37,110
+372,343,Mariano de Abreu,0.171,28,20
+373,337,Manacás,0.732,31,50
+374,397,Vila Antena Montanhês,0.025,31,50
+375,167,São Paulo,0.497,27,10
+376,120,Ouro Preto,2.37,31,50
+377,450,Vila Real II,0.018,32,60
+378,82,Ipiranga,0.893,26,0
+379,71,Glória,1.654,29,30
+380,249,Jardim Alvorada,0.883,31,50
+381,117,Nova Vista,0.688,28,20
+382,2,Alípio de Melo,1.181,31,50
+383,112,Nova Floresta,0.427,26,0
+384,3,Alto Caiçaras,1.064,30,40
+385,165,São Marcos,0.584,27,10
+386,388,Urca,0.289,31,50
+387,53,Dom Joaquim,0.45,27,10
+388,164,São Lucas,0.289,35,90
+389,278,Barão Homem de Melo III,0.007,332,150
+390,471,Vila Vista Alegre,0.37,37,110
+391,269,Alpes,0.212,332,150
+392,338,Vila Madre Gertrudes V,0.02,37,110
+393,59,Estoril,1.703,332,150
+394,300,Chácara Leonina,0.024,332,150
+395,317,Esperança,0.083,333,160
+396,446,Vila Piratininga (ZS),0.074,36,100
+397,99,Luxemburgo,0.621,34,80
+398,48,Coração de Jesus,0.284,34,80
+399,344,Marieta I,0.047,36,100
+400,341,Marçola,0.248,35,90
+401,154,Santo Antônio,1.307,34,80
+402,86,Jardim América,0.928,332,150
+403,19,Cabana do Pai Tomás,0.503,37,110
+404,437,Vila Nova Gameleira II,0.055,37,110
+405,436,Vila Nova Gameleira I,0.022,37,110
+406,214,Monte São José,0.035,34,80
+407,101,Mangabeiras,6.19,35,90
+408,226,João Paulo II,0.165,36,100
+409,376,São João,0.06,333,160
+410,334,Leonina,0.172,332,150
+411,382,Vila Madre Gertrudes I,0.061,37,110
+412,206,Olaria,0.629,36,100
+413,302,Comiteco,0.766,35,90
+414,399,Vila Bandeirantes,0.02,34,80
+415,405,Vila COPASA,0.009,333,160
+416,435,Vila Nova dos Milionários,0.012,333,160
+417,467,Vila Tirol,0.008,36,100
+418,142,Santa Helena,0.591,36,100
+419,97,Lindéia,2.012,36,100
+420,180,Tirol,1.755,36,100
+421,233,Túnel de Ibirité,0.194,36,100
+422,179,Teixeira Dias,0.733,36,100
+423,228,Diamante,1.833,36,100
+424,212,Fernão Dias,0.505,27,10
+425,250,Pousada Santo Antônio,0.394,27,10
+426,236,Marilândia,0.157,36,100
+427,221,Araguaia,1.343,333,160
+428,224,Santa Margarida,0.254,36,100
+429,119,Olhos d'Água,3.662,332,150
+430,270,Alta Tensão I,0.079,333,160
+431,220,Bonsucesso,2.819,333,160
+432,237,Santa Cecília,0.347,333,160
+433,476,CDI Jatobá,0.877,333,160
+434,232,Castanheira (ZS),0.397,333,160
+435,63,Vila CEMIG,0.295,333,160
+436,480,Bairro das Indústrias I,3.661,36,100
+437,362,Pantanal,0.045,332,150
+438,276,Bairro das Indústrias II,0.196,37,110
+439,103,Marajó,0.271,332,150
+440,13,Belvedere,2.921,34,80
+441,490,Vila Vera Cruz II,0.001,28,20
+442,491,Vila Vera Cruz I,0.008,28,20
+443,222,Parque São José,0.339,332,150
+444,415,Vila Havaí,0.009,332,150
+445,474,Acaba Mundo,0.04,35,90
+446,320,Estrela do Oriente,1.013,37,110
+447,90,Jatobá,0.361,36,100
+448,66,Flávio Marques Lisboa,1.238,333,160
+449,229,Miramar,0.639,333,160
+450,366,Pindura Saia,0.004,35,90
+451,414,Vila FUMEC,0.003,35,90
+452,328,Imbaúbas,0.048,37,110
+453,110,Nova Cintra,0.727,37,110
+454,377,São Jorge I,0.079,332,150
+455,100,Madre Gertrudes,0.536,37,110
+456,192,Virgínia,0.057,37,110
+457,383,Sport Club,0.063,37,110
+458,32,Carmo,0.314,35,90
+459,176,Sion,1.197,34,80
+460,70,Gameleira,1.017,37,110
+461,418,Vila Independência IV,0.04,333,160
+462,137,Sagrada Família,2.291,26,0
+463,651,Irmã Dorothy,0.021,333,160
+464,652,Camilo Torres,0.016,333,160
+465,653,Dandara,0.258,31,50
+466,16,Bom Jesus,0.275,30,40
+467,223,Flávio de Oliveira,0.11,333,160
+468,248,Distrito Industrial do Jatobá,0.908,333,160
+469,282,Vila Batik,0.012,333,160
+470,238,Conjunto Jatobá,0.141,333,160
+471,23,Caiçaras,2.246,30,40
+472,140,Santa Cruz,1.741,32,60
+473,425,Vila Mangueiras,0.093,333,160
+474,244,Mineirão,0.394,333,160
+475,144,Santa Lúcia,2.1,34,80
+476,124,Bandeirantes,4.777,31,50
+477,145,Conjunto Santa Maria,0.081,34,80
+478,219,Conjunto Bonsucesso,0.047,333,160
+479,14,Betânia,1.311,37,110
+480,76,Havaí,1.578,332,150
+481,370,Santa Rita de Cássia,0.158,34,80
+482,239,Cinquentenário,0.694,332,150
+483,316,Vila Madre Gertrudes II,0.01,37,110
+484,400,Vila Barragem Santa Lúcia,0.278,34,80
+485,155,São Bento,0.98,34,80
+486,227,Ademar Maldonado,0.164,36,100
+487,243,Petrópolis,0.298,333,160
+488,261,Vitória da Conquista,0.095,333,160
+489,444,Vila Petrópolis,0.011,333,160
+490,80,Independência,0.791,333,160
+491,416,Vila Independência I,0.145,333,160
+492,417,Vila Independência II,0.078,333,160
