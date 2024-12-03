@@ -11,7 +11,7 @@ import plotly.express as px
 from plotly.subplots import make_subplots
 #app = Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
 app = Dash(__name__, use_pages=True, external_stylesheets=[dbc.themes.BOOTSTRAP])
-
+server = app.server
 
 app.layout = html.Div([
     html.H1('Eleições municipais de Belo Horizonte (primeiro turno)'),
@@ -24,4 +24,4 @@ app.layout = html.Div([
 ])
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
