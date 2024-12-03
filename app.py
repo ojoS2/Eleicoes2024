@@ -14,7 +14,7 @@ app = Dash(__name__, use_pages=True, external_stylesheets=[dbc.themes.BOOTSTRAP]
 
 
 app.layout = html.Div([
-    html.H1('Considerações sobre o desempenho eleitoral nas eleições municipais de Belo Horizonte (primeiro turno)'),
+    html.H1('Eleições municipais de Belo Horizonte (primeiro turno)'),
     html.Div([
         html.Div(
             dcc.Link(f"Navergar para {page['name']}", href=page["relative_path"])

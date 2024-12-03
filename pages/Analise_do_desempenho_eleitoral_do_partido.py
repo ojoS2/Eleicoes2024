@@ -1,14 +1,30 @@
 import dash
-from statistics import stdev
 import json
 import pandas as pd
-from dash import Dash, html, dcc, Input, Output, State, callback, Patch
+from dash import html, dcc, Input, Output, callback
 import dash_bootstrap_components as dbc
-import dash_ag_grid as dag
 import plotly.graph_objects as go
 import plotly.express as px
-from plotly.subplots import make_subplots
 from PIL import Image
+
+
+def float_to_currency(x):
+    new = str(x).replace('.',',')
+    if new.find(',')>0:
+        [main, end] = new.split(',')
+    else:
+        [main, end] = [new, '']
+    new = []
+    if len(main)%3 > 0:
+        new.append(main[:len(main)%3])
+        main = main[len(main)%3:]
+    while len(main) > 0:
+        new.append(main[:3])
+        main = main[3:]
+    while len(end)<2:
+        end = end+'0'
+    return '.'.join(new)+','+end
+
 
 
 investimentos_dict = {'INDIRA XAVIER':40459.29,
@@ -226,7 +242,7 @@ def card_UP():
                 ** Contagem final de votos ** 
                 ### {variaveis['votos_total_UP']}  
                 ** Custo final declarado por voto** 
-                ### {variaveis['preco_do_voto_total_UP']} R$
+                ### {float_to_currency(variaveis['preco_do_voto_total_UP'])} R$
                 ** Média do percentual de ocupacao de urnas**
                 ### {variaveis['media_de_ocupacao_de_urna']}%
                 ** Percentual de votos ideológicos**
@@ -254,7 +270,7 @@ def card_Adriel():
                 ** Contagem de votos ** 
                 ### {variaveis['votos_Adriel']}  
                 ** Custo final declarado por voto** 
-                ### {variaveis['custo_voto_Adriel']} R$
+                ### {float_to_currency(variaveis['custo_voto_Adriel'])} R$
                 ** Ocupacao média das urnas**
                 ### {variaveis['ocupacao_media_Adriel']}%
                 ** Tipo de liderança**
@@ -293,7 +309,7 @@ def card_Edna():
                 ** Contagem de votos ** 
                 ### {variaveis['votos_Edna']}  
                 ** Custo final declarado por voto** 
-                ### {variaveis['custo_voto_Edna']} R$
+                ### {float_to_currency(variaveis['custo_voto_Edna'])} R$
                 ** Ocupacao média das urnas**
                 ### {variaveis['ocupacao_media_Edna']}%
                 ** Tipo de liderança**
@@ -332,7 +348,7 @@ def card_Indira():
                 ** Contagem de votos ** 
                 ### {variaveis['votos_Indira']}  
                 ** Custo final declarado por voto** 
-                ### {variaveis['custo_voto_Indira']} R$
+                ### {float_to_currency(variaveis['custo_voto_Indira'])} R$
                 ** Ocupacao média das urnas**
                 ### {variaveis['ocupacao_media_Indira']}%
                 ** Tipo de liderança**
@@ -371,7 +387,7 @@ def card_Mari():
                 ** Contagem de votos ** 
                 ### {variaveis['votos_Mari']}  
                 ** Custo final declarado por voto** 
-                ### {variaveis['custo_voto_Mari']} R$
+                ### {float_to_currency(variaveis['custo_voto_Mari'])} R$
                 ** Ocupacao média das urnas**
                 ### {variaveis['ocupacao_media_Mari']}%
                 ** Tipo de liderança**
@@ -591,9 +607,9 @@ def end_card_test(flag):
         ** Razão de votos a prefeitura por votos a vereança ** 
         ### {var_10}  
         ** Preço médio do voto a prefeitura**
-        ### {var_30} R$
+        ### {float_to_currency(var_30)} R$
         ** Preço médio do voto a vereança**
-        ### {var_40} R$
+        ### {float_to_currency(var_40)} R$
         ** Percentual de votos ideológicos **
         ### {var_50}%
         """
@@ -613,13 +629,13 @@ def end_card_test(flag):
         text_2 = f"""
         ### Valores declarados
         ** Adriel ** 
-        ### {investimentos_dict['ADRIEL DO MLB']} R$ 
+        ### {float_to_currency(investimentos_dict['ADRIEL DO MLB'])} R$ 
         ** Edna ** 
-        ### {investimentos_dict['EDNA DA IZIDORA']} R$
+        ### {float_to_currency(investimentos_dict['EDNA DA IZIDORA'])} R$
         ** Mari **
-        ### {investimentos_dict['MARI FERNANDES']} R$
+        ### {float_to_currency(investimentos_dict['MARI FERNANDES'])} R$
         ** Indira **
-        ### {investimentos_dict['INDIRA XAVIER']} R$
+        ### {float_to_currency(investimentos_dict['INDIRA XAVIER'])} R$
         """
         body_1 = dbc.Alert(dcc.Markdown(
                     text_0,
@@ -659,9 +675,9 @@ def end_card_test(flag):
         ** Votos à prefeitura por votos a vereança** 
         ### {var_1}  
         ** Preço médio do voto a prefeitura**
-        ### {var_3}R$
+        ### {float_to_currency(var_3)}R$
         ** Preço médio do voto a vereança**
-        ### {var_4}R$   
+        ### {float_to_currency(var_4)}R$   
         ** Percentual de votos ideológicos **
         ### {var_5}%
         """
@@ -670,9 +686,9 @@ def end_card_test(flag):
         ** Votos à prefeitura por votos a vereança** 
         ### {var_1_comp_1}  
         ** Preço médio do voto a prefeitura**
-        ### {var_3_comp_1} R$
+        ### {float_to_currency(var_3_comp_1)} R$
         ** Preço médio do voto a vereança**
-        ### {var_4_comp_1} R$
+        ### {float_to_currency(var_4_comp_1)} R$
         ** Percentual de votos ideológicos **
         ### {var_5_comp_1}%
         """
@@ -681,24 +697,24 @@ def end_card_test(flag):
         ** Votos à prefeitura por votos a vereança** 
         ### {var_1_comp_2}  
         ** Preço médio do voto a prefeitura**
-        ### {var_3_comp_2}R$
+        ### {float_to_currency(var_3_comp_2)}R$
         ** Preço médio do voto a vereança**
-        ### {var_4_comp_2}R$
+        ### {float_to_currency(var_4_comp_2)}R$
         ** Percentual de votos ideológicos **
         ### {var_5_comp_2}%
         """
         text_3 = f"""
         ### Custo medio de vereadores eleitos
         ** Custo médio do vereador eleito do PL ** 
-        ### {variaveis['custo_medio_eleito_PL']}
+        ### {float_to_currency(variaveis['custo_medio_eleito_PL'])} R$
         ** Custo médio do vereador eleito do NOVO ** 
-        ### {variaveis['custo_medio_eleito_NOVO']}  
+        ### {float_to_currency(variaveis['custo_medio_eleito_NOVO'])} R$  
         ** Custo médio do vereador eleito do PT ** 
-        ### {variaveis['custo_medio_eleito_PT']}  
+        ### {float_to_currency(variaveis['custo_medio_eleito_PT'])} R$
         ** Custo médio do vereador eleito do PSOL ** 
-        ### {variaveis['custo_medio_eleito_PSOL']}  
+        ### {float_to_currency(variaveis['custo_medio_eleito_PSOL'])} R$ 
         ** Custo médio do vereador eleito do PCdoB ** 
-        ### {variaveis['custo_medio_eleito_PCdoB']}  
+        ### {float_to_currency(variaveis['custo_medio_eleito_PCdoB'])} R$
         """
 
         body_1 = dbc.Alert(dcc.Markdown(

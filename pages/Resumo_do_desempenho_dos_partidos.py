@@ -27,8 +27,8 @@ def float_to_currency(x):
     return '.'.join(new)+','+end
 
 id_map = pd.read_csv('data/teste_bh_dados.csv').reset_index()
-df = pd.read_csv('data/dados_tratados.csv').reset_index()
-df = df[df['cargo'] != '    Você aprova a alteração da bandeira  de Belo Horizonte?']
+#df = pd.read_csv('data/dados_tratados.csv').reset_index()
+#df = df[df['cargo'] != '    Você aprova a alteração da bandeira  de Belo Horizonte?']
 total_de_votos_por_partido = pd.read_csv('data/total_de_votos_por_partido_resumo.csv', sep=';').reset_index()
 contagem_de_votos_ideológicos = pd.read_csv('data/contagem_de_votos_ideológicos_resumo.csv', sep=';').reset_index()
 soma_votos_pref = pd.read_csv('data/soma_votos_pref_resumo.csv', sep=';').reset_index()
@@ -74,8 +74,6 @@ for partido in partidos_prefeitura:
     for zona in zona_heatmap:
         vars.append(int(sum(data_prefeitos_votos[(data_prefeitos_votos['partido']==partido)&(data_prefeitos_votos['zona']==zona)]['votos'])))
     matriz_de_valores.append(vars)
-
-
 
 
 
@@ -495,7 +493,9 @@ def heat_map():
     return fig
 
 def pie_chart(partido):
-    fig = px.pie(df[df['partido']==partido], values='votos', names='cargo', title='Votos a prefeitura e vereaça atrelados ao partido')
+    aux_0, aux_1 = data_prefeitos_votos[data_prefeitos_votos['partido']==partido][['votos']], data_vereadores_votos[data_vereadores_votos['partido']==partido][['votos']]
+    aux_0['cargo'], aux_1['cargo'] = ['Prefeito' for _ in range(aux_0.shape[0])], ['Vereador' for _ in range(aux_1.shape[0])]
+    fig = px.pie(pd.concat([aux_0, aux_1]), values='votos', names='cargo', title='Votos a prefeitura e vereaça atrelados ao partido')
     return fig
 
 def map(partido):
