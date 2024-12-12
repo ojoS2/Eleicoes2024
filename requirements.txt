@@ -1,7 +1,6 @@
 dash
 pandas
 gunicorn
-json
 plotly
-PIL
+pillow
 numpy
