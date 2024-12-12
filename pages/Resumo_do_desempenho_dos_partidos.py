@@ -565,31 +565,87 @@ heading = html.H1("Analise do primeiro turno das eleições de 2024 em Belo Hori
 
 about_card = dcc.Markdown(
     """
-    The gender pay gap does not measure equal pay, instead it measures the difference between men and
-    women's average and median hourly pay.  Equal pay, on the other hand, is the legal obligation under the Employment
-    Equality Acts that requires  employers to give men and women equal pay if they are employed to do equal work. 
-    
-    Note that there is no equivalent reporting requirement in the US. Refer to this [US Department of Labour brief](https://www.dol.gov/sites/dolgov/files/WB/equalpay/WB_issuebrief-undstg-wage-gap-v1.pdf)
-    which notes that "regardless of the gender composition of jobs, women tend to be paid less on average than men in the
-    same occupation even when working full time."
-    """)
+    Os gráficos e cartões apresentados nesta página e nas demais são interativos, isto é, apresentam capacidades de apresentar mais informações ou mudar a sua própria forma quando selecionamos diferentes entradas nas listas de opções localizadas no lado esquerdo dos painéis. É recomendado a plena exploração dessas características.
+    """
+)
 
 help_card = dcc.Markdown(
     """
-    Ajuda sobre o que é mostrado
+    Alguns conceitos apresentados neste trabalho podem apresentar alguma dificuldade de compreenção devido a aspectos técnicos ou 
+    mesmo devido a novidade de uso, logo é conveniente que sejam explicados e justificados com mais cuidado.
+
+    O **voto ideológico**, o qual se faz referencia no trabalho, se trata de votos a vereança na legenda (80 no caso da UP) e são uma 
+    medida indireta do nível de alinhamento ideológico com o partido, embora apresente também caráter ambíguo: é possivel que se votou 
+    na legenda porque apesar de conhecer os candidatos a vereança, não se notou motivo forte o suficiente para se engajar com um candidato 
+    apenas mas simpatiza com a luta do partido, o que seria uma fenômeno positivo para o futuro eleitoral do partido, ou; é possivel que se vota na legenda porque as informações 
+    sobre as candidaturas não chegaram à pessoa, mas a pessoa conhece o partido de outras fontes, por exemplo das redes, o que caracteriza um fenômeno negativo para a saúde eleitoral do partido.
+
+
+    O **custo declarado por voto** é a razão entre os custos declarados e o número de votos. Quando se refere a um candidato, os custos 
+    e os votos se referem apenas a este candidato. Quando há a referencia a todos os candidatos à vereança, juntamos os custos e os votos
+    registrados a vereança (neste caso, votos ideológicos são contabilizados e é atribuído a eles o valor 0 R$ de investimento). Finalmente, 
+    quando é feita a referência de **todos**, implica que se faz referência aos candidatos a prefeitura **e** vereança.
+
+    O **percentual de votos ideológicos** é a razão entre a quantidade de votos ideológicos com o total de votos a vereança no partido e é uma 
+    medida indireta de compromisso ideológicos dos eleitores.
+
+    O **percentual de ocupação de urnas** é a razão entre as urnas (ou seções) que apresentaram ao menos um voto no partido ou candidato contra o 
+    número total de urnas (o que pode ser agrupado em zonas eleitorais). Em partidos conhecidos como PT e PL, a taxa de ocupação de urnas é 
+    importante para se distinguir candidatos entre lideranças loais e lideranças regionais (mais sobre estes conceitos abaixo). No caso de 
+    partidos que buscam o reconhecimento dos eleitores, como os partidos da esquerda radical, esta medida é importante para identificarmos a difusão
+    das informações dos partidos pelas diversas regiões contempladas pelo pleito.
+
+    A **votos a prefeitura por voto a vereança** se trata, como o nome sugere, na quantidade de votos ao candidato a prefeito dividido pelo total de votos 
+    à vereança dos candidatos do partido. Se trata de uma medida indireta de identificação ideológica dos eleitores com os respectivos partidos assim como 
+    uma medida indireta dos movimentos ideológicos dos eleitores. Valores maiores que um indicam que a quantidade de votos a prefeito supera a quantidade 
+    de votos a vereança alcançada pelo próprio partido o que implica que eleitores de outros partidos identificaram o projeto deste partido específico como 
+    representativo de seus anseios.
+
+    As **correlações de votos (spearman)** são uma medida de co-variação dos resultados de dois candidatos. Um valor próximo de -1 indica que nos locais onde o 
+    primeiro candidato tem uma votação expressiva, o segundo tem uma votação irrisória e vice-versa. Um valor perto de 1 indica que os locais de votação expressiva
+    do primeiro candidato corresponde aos locais de votação expressiva do outro candidato assim como os locais de votação baixa também são correspondentes. Um valor 
+    próximo de 0 indica que não se pode tirar tais conclusões. 
+
+    As **lideranças locais** são candidatos que apresentam votação expressiva em certas cesões, geralmente hospedadas no mesmo local, mas que não apresentam resultados  
+    em outras regiões, isto é, são candidatos com trabalho prévio na região e por isso são conhecidos localmente. Já **lideranças regionais** são candidatos que apresentam 
+    votos em grandes porções do municipio. Uma forma de se diferenciar tais candidatos de forma objetiva é se montar a distribuição estatística dos votos pelas seções e se 
+    medir o desvio padrão dos votos, que é uma medida de largura da distribuição. Lideranças locais tendem a ter uma distribuição de votos fina, decorrente do seu numero expressivo 
+    contido em poucas seções ao passo que lideranças regionais apresentam números não despresíveis em comparação com o total em grande parte das seções. 
+
     """)
 
 data_card = dcc.Markdown(
     """
-    Starting from 2022, Gender Pay Gap Reporting is a regulatory requirement that mandates employers in Ireland with
-    more than 250 employees to publish information on their gender pay gap.
+    A busca por informações para a análise não foi fácil e foi preciso o acesso em 
+    várias fontes distintas, a junção estratégica destes dados e a preparação para 
+    análise. 
     
-    [Data source](https://paygap.ie/)
+    Os dados relativos aos números brutos do pleito foram retirados do portal de dados abertos do TSE:
+    [Fonte](https://dadosabertos.tse.jus.br/dataset/resultados-2024-boletim-de-urna)
+
+    O endereço dos locais de votação por zona e seção não estavam disponíveis no portal de dados abertos 
+    então foi preciso extraí-los diretamente de agentes de imprensa:
+    [Fonte](https://g1.globo.com/mg/minas-gerais/eleicoes/2024/noticia/2024/10/28/resultados-do-2o-turno-por-local-de-votacao-em-belo-horizonte-nas-eleicoes-2024.ghtml)
     
-    [Data source GitHub](https://github.com/zenbuffy/irishGenderPayGap/tree/main)
-    
-    This site was created for Plotly's Figure Friday challenge. For additional data visualizations of this dataset and
-    to join the conversation, visit the [Plotly Community Forum](https://community.plotly.com/t/figure-friday-2024-week-32/86401)
+    Os custos declarados dos candidatos foram retirados diretamente do TSE:
+    [Fonte](https://divulgacandcontas.tse.jus.br/)
+
+    Para os mapas, e geolocalização das escolas (coordenadas geográficas), assim como seus endereços, 
+    foram necessárias consultas ao google maps usando o nome dos locais:
+    [Fonte](https://www.google.com/maps)
+
+    Para a representação dos mapas, é preciso dados especiais dos desenhos aproximados dos mapas que foi encontrado 
+    no portal de dados abertos da prefeitura de Belo Horizonte:
+    [Fonte](https://dados.pbh.gov.br/dataset?res_format=JSON&organization=prodabel_pbh)
+
+    Finalmente, a geolocalização das zonas eleitorais foi especialmente desafiadora porque não existem 
+    fronteiras fixas entre uma zona e outra no sentido que há entre bairros de forma que foi necessário 
+    acessar o mapa de zonas eleitorais disponível no TSE:
+    [Fonte](https://www.justicaeleitoral.jus.br/++theme++justica_eleitoral/pdfjs/web/viewer.html?file=https://www.justicaeleitoral.jus.br/arquivos/tre-mg-mapa-zonas-bh/@@download/file/mapa-zonas-bh.pdf).
+     Atribuiu-se então, bairro a bairro, a zona eleitoral pertinente se os bairros em questão estavam no interior 
+    da zona eleitoral (bulk) e atribuir às zonas de fronteira a zona com maior percentual do bairro. Na prática
+    a diferença entre as zonas apresentadas nos mapas e as regiões inerentes às zonas eleitorais pertinentes se 
+    diferenciam pouco.
     """
 )
 
